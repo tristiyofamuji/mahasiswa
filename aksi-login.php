@@ -2,7 +2,7 @@
 include 'koneksi.php';
 if(isset($_POST['masuk'])){
 	$username 	= $_POST['username'];
-	$password 	= sha1($_POST['password']);
+	$password 	= $_POST['password'];
 
 	//query untuk cek data admin yang tersimpan di database
 	$login		= mysqli_query($con, "SELECT * FROM admin WHERE username= '$username' AND password='$password' ");

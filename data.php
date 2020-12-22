@@ -97,5 +97,5 @@ $admin = mysqli_fetch_array(mysqli_query($con,"SELECT * FROM admin WHERE id_admi
             $('#example').DataTable( {
             } );
          } );
-   </script>
+      </script>
 </html>
